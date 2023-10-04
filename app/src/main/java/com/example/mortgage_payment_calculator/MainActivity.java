@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Floating action to show the use of intents
         FloatingActionButton fab = findViewById(R.id.floatingActionButton);
         fab.setOnClickListener(view -> {
             // Launches reference Page when Floating action button is clicked
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint({"SetTextI18n", "DefaultLocale"})
-    private void calculateSum() {
+    public void calculateSum() {
         try { // try block to throw error if any user input does not match required type or null
             // Parses user input into double to be able to perform arithmetic operations on
             double x = Double.parseDouble(principalMortgage.getText().toString());
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             // Post results into text window if no errors
             resultText.setText("Monthly Payment: $" + String.format("%.2f", sum));
         } catch (NumberFormatException e) {
-            // 
+            // Returns error if valid input is not present
             resultText.setText("Invalid input.");
         }
     }
