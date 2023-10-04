@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mortgage-payment-calculator</string>
+    <string name="mortgage_principal_amount">Mortgage Principal Amount</string>
+    <string name="interest_rate">Interest Rate (%)</string>
+    <string name="amortization_period">Amortization Period (Months)</string>
+    <string name="hint_amount">1000000</string>
+    <string name="interest_rate_ex">6.91</string>
+    <string name="amortization_period_ex">20</string>
+    <string name="button_Txt">Calculate</string>
+    <string name="amount_txt">Amount</string>
+    <string name="fab_dec">link to website of reference</string>
+</resources>
